@@ -6,6 +6,9 @@
     <artifactId>first-demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
+    <!--
+        通过以下parent配置，可以配置自己的项目继承于：spring-boot-starter-parent
+    -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -45,4 +48,15 @@
             <url>http://repo.spring.io/milestone</url>
         </pluginRepository>
     </pluginRepositories>
+
+    <!--以下是spring boot包含的一个maven插件，它可以将项目打包成一个可执行jar。-->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>
