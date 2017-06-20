@@ -12,6 +12,7 @@ public class Example {
     // @EnableAutoConfiguration注解告诉Spring Boot根据添加的jar依赖猜测你想如何配置Spring。
     @RequestMapping("/")
     String home() {
+
         return "Hello World!";
     }
 
